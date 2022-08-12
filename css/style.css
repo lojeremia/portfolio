@@ -12,12 +12,12 @@ a:hover {
 }
 
 .homeImg {
+    max-height: 482.85px;
+    max-width: 470.6px;
     transition: all 0.20s ease-in;
     position: relative;
     width: 50vw;
     margin-top: 25vh;
-    max-height: 482.85px;
-    max-width: 470.6px;
 }
 
 .homeImg:hover {
