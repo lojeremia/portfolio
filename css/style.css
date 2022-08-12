@@ -1,8 +1,8 @@
+
 a {
-    color: #acacac;
+    color: #8d8d8d;
     text-decoration: none;
-    font-size: 5vw;
-    max-width: 80%;
+    font-size: calc(24px + 1.5vw);
     height: auto;
 }
 
@@ -11,12 +11,13 @@ a:hover {
     filter: brightness(120%) saturate(105%);
 }
 
-
 .homeImg {
     transition: all 0.20s ease-in;
     position: relative;
     width: 50vw;
     margin-top: 25vh;
+    max-height: 482.85px;
+    max-width: 470.6px;
 }
 
 .homeImg:hover {
@@ -30,35 +31,32 @@ a:hover {
 #smoke {
 	position: absolute;
     z-index:-1;
-	width: 1px; height: 160px;
-	right: 36%; bottom: 72vh;
+	bottom: 74vh;
+    left: 58vw;
 }
 
-/* smoke balls */
-
+/* smoke balls  right: 36%;*/
 #smoke span { 
     display: block;
     position: absolute;
-    bottom: -35px; left: 50%; margin-left:-20px;
-    height: 0px; width: 0px;
-    border: 35px solid #cdcdcd;
-    border-radius: 35px;
-    left: -14px; opacity: 0;
+    border: 5vw solid #cdcdcd;
+    border-radius: 5vw;
+    opacity: 0;
     transform: scale(0.2);
-    filter: blur(8px);
+    filter: blur(0.5vw);
 }
 
 /* Smoke animation */
 @keyframes smokeL {
 	0%   { transform: scale(0.2) translate(0, 0) }
-	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
-	100% { opacity: 0; transform: scale(1) translate(-20px, -130px) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -2vw) }
+	100% { opacity: 0; transform: scale(1) translate(-2vw, -13vw) }
 }
 
 @keyframes smokeR {
 	0%   { transform: scale(0.2) translate(0, 0) }
-	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px) }
-	100% { opacity: 0; transform: scale(1) translate(20px, -130px) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -2vw) }
+	100% { opacity: 0; transform: scale(1) translate(2vw, -13vw) }
 }
 
 #smoke .s0 { animation: smokeL 10s 0s infinite }
@@ -71,3 +69,31 @@ a:hover {
 #smoke .s7 { animation: smokeR 10s 7s infinite }
 #smoke .s8 { animation: smokeL 10s 8s infinite }
 #smoke .s9 { animation: smokeR 10s 9s infinite }
+
+
+@media only screen and (max-width: 600px) {
+    #smoke {
+        position: absolute;
+        z-index:-1;
+        bottom: 74vh;
+        left: 58vw;
+    }
+}
+
+@media only screen and (min-width: 1000px) {
+    #smoke {
+        position: absolute;
+        z-index:-1;
+        bottom: 75vh;
+        left: 55vw;
+    }
+}
+
+@media only screen and (min-width: 1450px) {
+    #smoke {
+        position: absolute;
+        z-index:-1;
+        bottom: 79vh;
+        left: 52vw;
+    }
+}
