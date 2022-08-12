@@ -117,6 +117,19 @@ html, body {
     }
 }
 
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 2000px) {
+    .cursor {
+        display: block;
+    }
+    #smoke {
+        position: absolute;
+        z-index: 0;
+        bottom: 78vh;
+        left: 52.5vw;
+    }
+}
+
 .home {
     max-height: 482.85px;
     max-width: 470.6px;
