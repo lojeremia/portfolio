@@ -1,10 +1,13 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     cursor: none;
 } 
 
+html, body {
+    background-color: white;
+    min-height: 100vh;
+}
 
 a {
     color: #777777;
@@ -18,7 +21,6 @@ a:hover {
     transition: all 0.20s ease-in;
     color: black;
 }
-
 
 /* SMOKE -- https://codepen.io/verlok/pen/DmeERp */
 
@@ -111,11 +113,11 @@ a:hover {
 
 .cursor {
     position: fixed;
-    z-index: 2;
+    z-index: 10;
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background-color: #5555ff;
+    background-color: #1843ba;
     transition: 0.1s;
     transform: translate(-50%,-50%);
     pointer-events: none;
