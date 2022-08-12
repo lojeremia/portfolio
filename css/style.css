@@ -9,7 +9,6 @@ html, body {
     min-height: 100vh;
 }
 
-
 /* SMOKE -- https://codepen.io/verlok/pen/DmeERp */
 
 /* Smoke container */
@@ -17,7 +16,7 @@ html, body {
 #smoke {
 	position: absolute;
     z-index: -9999;
-	bottom: 74vh;
+	bottom: 76vh;
     left: 58vw;
     z-index: 0;
 }
@@ -26,8 +25,8 @@ html, body {
 #smoke span { 
     display: block;
     position: absolute;
-    border: 5vw solid #cdcdcd;
-    border-radius: 5vw;
+    border: 4vw solid #cdcdcd;
+    border-radius: 4vw;
     opacity: 0;
     transform: scale(0.2);
     filter: blur(0.5vw);
@@ -58,32 +57,66 @@ html, body {
 #smoke .s9 { animation: smokeR 10s 9s infinite }
 
 
+/* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
+    .cursor {
+        display:none;
+    }
     #smoke {
         position: absolute;
         z-index:0;
-        bottom: 74vh;
-        left: 58vw;
+        left: 60vw;
     }
 }
 
-@media only screen and (min-width: 1000px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .cursor {
+        display:none;
+    }
     #smoke {
         position: absolute;
-        z-index: 0;
-        bottom: 75vh;
-        left: 55vw;
+        z-index:0;
+        left: 60vw;
     }
 }
 
-@media only screen and (min-width: 1450px) {
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .cursor {
+        display:none;
+    }
     #smoke {
         position: absolute;
         z-index: 0;
-        bottom: 79vh;
-        left: 52vw;
+        left: 59vw;
     }
 }
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .cursor {
+        display:none;
+    }
+    #smoke {
+        position: absolute;
+        z-index: 0;
+        left: 57vw;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .cursor {
+        display:none;
+    }
+    #smoke {
+        position: absolute;
+        z-index: 0;
+        left: 54vw;
+    }
+}
+
 
 .home {
     max-height: 482.85px;
