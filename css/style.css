@@ -1,28 +1,24 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: none;
+} 
+
 
 a {
-    color: #8d8d8d;
+    color: #777777;
     text-decoration: none;
     font-size: calc(24px + 1.5vw);
     height: auto;
+    transition: 0.2s;
 }
 
 a:hover {
     transition: all 0.20s ease-in;
-    filter: brightness(120%) saturate(105%);
+    color: black;
 }
 
-.home {
-    max-height: 482.85px;
-    max-width: 470.6px;
-    transition: all 0.20s ease-in;
-    position: relative;
-    width: 50vw;
-    margin-top: 25vh;
-}
-
-.home:hover {
-    filter: brightness(110%) saturate(105%);
-}
 
 /* SMOKE -- https://codepen.io/verlok/pen/DmeERp */
 
@@ -30,9 +26,10 @@ a:hover {
 
 #smoke {
 	position: absolute;
-    z-index:-1;
+    z-index: -9999;
 	bottom: 74vh;
     left: 58vw;
+    z-index: 0
 }
 
 /* smoke balls  right: 36%;*/
@@ -74,7 +71,7 @@ a:hover {
 @media only screen and (max-width: 600px) {
     #smoke {
         position: absolute;
-        z-index:-1;
+        z-index:0;
         bottom: 74vh;
         left: 58vw;
     }
@@ -83,7 +80,7 @@ a:hover {
 @media only screen and (min-width: 1000px) {
     #smoke {
         position: absolute;
-        z-index:-1;
+        z-index:0;
         bottom: 75vh;
         left: 55vw;
     }
@@ -92,8 +89,37 @@ a:hover {
 @media only screen and (min-width: 1450px) {
     #smoke {
         position: absolute;
-        z-index:-1;
+        z-index:0;
         bottom: 79vh;
         left: 52vw;
     }
 }
+
+.home {
+    max-height: 482.85px;
+    max-width: 470.6px;
+    transition: all 0.20s ease-in;
+    position: relative;
+    width: 50vw;
+    margin-top: 25vh;
+    z-index: 1;
+}
+
+.home:hover {
+    filter: brightness(110%) saturate(105%);
+}
+
+.cursor {
+    position: fixed;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #5555ff;
+    transition: 0.1s;
+    transform: translate(-50%,-50%);
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+
