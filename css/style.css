@@ -11,7 +11,7 @@ a:hover {
     filter: brightness(120%) saturate(105%);
 }
 
-.homeImg {
+.home {
     max-height: 482.85px;
     max-width: 470.6px;
     transition: all 0.20s ease-in;
@@ -20,7 +20,7 @@ a:hover {
     margin-top: 25vh;
 }
 
-.homeImg:hover {
+.home:hover {
     filter: brightness(110%) saturate(105%);
 }
 
