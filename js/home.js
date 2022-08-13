@@ -6,6 +6,46 @@ $(document).ready(function(){
       function() {
           $(this).attr("src","images/index/logo.png");
   });
+
+  $(".aboutImg").hover(
+    function() {
+        $(this).attr("src","images/home/portraitColor.png");
+    },
+    function() {
+        $(this).attr("src","images/home/portrait.png");
+  });
+
+  $(".workImg").hover(
+    function() {
+        $(this).attr("src","images/home/workColor.png");
+    },
+    function() {
+        $(this).attr("src","images/home/work.png");
+  });
+  
+  $(".artImg").hover(
+    function() {
+        $(this).attr("src","images/home/artColor.png");
+    },
+    function() {
+        $(this).attr("src","images/home/art.png");
+  });
+
+  $(".writingImg").hover(
+    function() {
+        $(this).attr("src","images/home/writingColor.png");
+    },
+    function() {
+        $(this).attr("src","images/home/writing.png");
+  });
+
+  $(".resumeImg").hover(
+    function() {
+        $(this).attr("src","images/home/resumeColor.png");
+    },
+    function() {
+        $(this).attr("src","images/home/resume.png");
+  });
 });
 
 $(document).mousemove(function(e) {
