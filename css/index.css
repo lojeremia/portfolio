@@ -5,7 +5,7 @@
 } 
 
 html, body {
-    background-color: rgb(25, 25, 25);
+    background-color: #141414;
     min-height: 100vh;
 }
 
@@ -161,8 +161,8 @@ a:hover {
 .cursor {
     position: fixed;
     z-index: 10;
-    width: 20px;
-    height: 20px;
+    width: 10px;
+    height: 10px;
     border-radius: 50%;
     background-color: #ffffff;
     transition: transform 350ms ease;
