@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    cursor: none;
+} 
+
+html, body {
+    background-color: #141414;
+    min-height: 100vh;
+}
+
+/* SMOKE -- https://codepen.io/verlok/pen/DmeERp */
+
+/* Smoke container */
+
+#smoke {
+	position: absolute;
+    z-index: -9999;
+	bottom: 76vh;
+    left: 58vw;
+    z-index: 0;
+}
+
+/* smoke balls  right: 36%;*/
+#smoke span { 
+    display: block;
+    position: absolute;
+    border: 4vw solid #cdcdcd;
+    border-radius: 4vw;
+    opacity: 0;
+    transform: scale(0.2);
+    filter: blur(0.5vw);
+}
+
+/* Smoke animation */
+@keyframes smokeL {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -2vw) }
+	100% { opacity: 0; transform: scale(1) translate(-2vw, -13vw) }
+}
+
+@keyframes smokeR {
+	0%   { transform: scale(0.2) translate(0, 0) }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -2vw) }
+	100% { opacity: 0; transform: scale(1) translate(2vw, -13vw) }
+}
+
+#smoke .s0 { animation: smokeL 10s 0s infinite }
+#smoke .s1 { animation: smokeR 10s 1s infinite }
+#smoke .s2 { animation: smokeL 10s 2s infinite }
+#smoke .s3 { animation: smokeR 10s 3s infinite }
+#smoke .s4 { animation: smokeL 10s 4s infinite }
+#smoke .s5 { animation: smokeR 10s 5s infinite }
+#smoke .s6 { animation: smokeL 10s 6s infinite }
+#smoke .s7 { animation: smokeR 10s 7s infinite }
+#smoke .s8 { animation: smokeL 10s 8s infinite }
+#smoke .s9 { animation: smokeR 10s 9s infinite }
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .cursor {
+        display:none;
+    }
+    #smoke {
+        position: absolute;
+        z-index:0;
+        left: 60vw;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .cursor {
+        display:none;
+    }
+    #smoke {
+        position: absolute;
+        z-index:0;
+        left: 60vw;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .cursor {
+        display:block;
+    }
+    #smoke {
+        position: absolute;
+        z-index: 0;
+        left: 59vw;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .cursor {
+        display:block;
+    }
+    #smoke {
+        position: absolute;
+        z-index: 0;
+        left: 57vw;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .cursor {
+        display: block;
+    }
+    #smoke {
+        position: absolute;
+        z-index: 0;
+        left: 54vw;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 2000px) {
+    .cursor {
+        display: block;
+    }
+    #smoke {
+        position: absolute;
+        z-index: 0;
+        bottom: 78vh;
+        left: 52.5vw;
+    }
+}
+
+.home {
+    max-height: 482.85px;
+    max-width: 470.6px;
+    transition: all 0.20s ease-in;
+    position: relative;
+    width: 50vw;
+    margin-top: 25vh;
+    z-index: 1;
+}
+
+.home:hover {
+    filter: brightness(110%) saturate(105%);
+}
+
+a {
+    color: #7c7c7c;
+    text-decoration: none;
+    font-size: calc(24px + 1.5vw);
+    height: auto;
+    transition: 0.2s;
+    z-index: 2;
+}
+
+a:hover {
+    transition: all 0.20s ease-in;
+    color: rgb(200, 200, 200);
+}
+
+.cursor {
+    position: fixed;
+    z-index: 10;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    transition: transform 350ms ease;
+    transform: translate(-50%, -50%) scale(1);
+    pointer-events: none;
+    mix-blend-mode: difference;
+}
+
+.cursorHover {
+    transform: translate(-50%, -50%) scale(3);
+}

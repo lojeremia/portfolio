@@ -1,0 +1,256 @@
+body {
+  text-align: left;
+  font-family: 'Inter';
+  line-height: 32px;
+  max-width: 960px;
+  min-width: 320px;
+  margin: auto;
+  padding: 100px;
+}
+
+/* PROJECT INTRO */
+
+strong {
+  color: var(--white);
+}
+
+.main-image {
+  margin-top: 100px;
+  width: 100%;
+  height: auto;
+}
+
+.company {
+  color: var(--gray);
+  font-size: 28px;
+  margin: 40px 0 20px 0;
+}
+
+.project-title {
+  font-weight: 700;
+  color: var(--white);
+  font-size: 48px;
+  margin-bottom: 40px;
+  font-family: "Merriweather";
+  line-height: 46px;
+}
+
+.sub {
+  font-size: 28px;
+  margin-top: 10px;
+}
+
+.subtitle-container {
+  background-color: #202020;
+  color: var(--white);
+  padding: 30px;
+  display: flex;
+}
+
+.subtitle-text {
+  flex: 85%;
+}
+
+.subtitle-container .quote {
+  font-family: "Merriweather";
+  font-style: italic;
+  padding-left: 20px;
+  margin: 0;
+}
+
+.subtitle-container .quote2 {
+  padding-left: 20px;
+  margin: 0;
+}
+
+
+.star {
+  width: auto;
+  max-height: 62px;
+  margin-right: 20px;
+}
+
+/* REMOVE LATER */
+@media only screen and (max-width: 600px) {
+  body {
+    background-color: red;
+  }
+}
+
+/* PROJECT STAT CARDS */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px -10px 50px -10px;
+  text-align: center;
+}
+
+.cards h2 {
+  background-color: #202020;
+  padding: 10px;
+  font-weight: 400;
+  font-size: 22px;
+  font-family: "Merriweather";
+}
+
+.cards li {
+  margin: 10px;
+  list-style: none;
+  background-color: #414141;
+  color: #fff;
+  flex: 1 1 200px;
+}
+
+.card-text {
+  padding: 10px;
+}
+
+hr {
+  border: 1px solid var(--gray);
+}
+
+/* WRITEUP */
+
+.flex-container {
+  margin-top: 50px;
+}
+
+@media (min-width: 56.25em) {
+  .flex-container {
+    display: flex;
+  }
+}
+
+.main-content {
+  flex: 1;
+  color: var(--gray);
+  margin-bottom: 30px;
+}
+
+.main-content p {
+  margin: 0 0 18px 0;
+}
+
+.main-content ol {
+  margin-left: 20px;
+}
+  
+.detail-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar {
+  flex: 0 0 330px;
+  font-family: "Merriweather";
+  font-weight: 300;
+  font-style: light;
+}
+
+/* VIDEO */
+.video-container {
+  margin: 50px 0 50px 0;
+}
+
+.video-container p {
+  margin-top: 20px;
+  text-align: center;
+  color: var(--gray)
+}
+
+.embed-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.embed-container iframe,
+.embed-container object,
+.embed-container embed { 
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* progress bar - side */
+.percent {
+  top: 50%;
+  right: 3%;
+  transform: translate(-50%, -50%);
+}
+
+.percent {
+  background: rgb(26, 26, 26);
+  border-radius: 2px;
+  overflow: hidden;
+  height: 300px;
+  width: 3px;
+  position: fixed;
+}
+
+.fill {
+  width: 100%;
+  height: 100%;
+  background: #9064a5;
+  position: absolute;
+  transition: background 0.15s ease;
+}
+
+h1 {
+  position: fixed;
+  font-size: 14px;
+  font-weight: 100;
+  text-align: center;
+  line-height: 1;
+  top: 32%;
+  right: 2%;
+}
+
+/* progress bar - bottom */
+.progress {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: rgb(26, 26, 26);
+  z-index: 1;
+}
+
+.progress .bar {
+  height: 100%;
+  width: 10%;
+  background: var(--purple);
+  transition: background 0.15s ease;
+}
+
+/* FADE IN ON SCROLL */
+body .scroll-trigger_move-in-left-fade-in {
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+body .scroll-trigger_move-in-left-fade-in.animation_move-in-fade-in {
+  opacity: 1;
+  transform: translateY(0);
+  transition: all 0.5s ease-out;
+}
+
+body [class*=animation_].delay-250 {
+  animation-delay: 250ms;
+  transition-delay: 0.25s;
+}
+
+body [class*=animation_].delay-500 {
+  animation-delay: 500ms;
+  transition-delay: 0.5s;
+}
+
+
+
+
+

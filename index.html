@@ -2,46 +2,64 @@
 <html>
   <head>
     <meta charset="UTF-8">
+    <link rel="icon" href="favicon.png">
     <title>Jeremia Lo</title>
     <meta name="description" content="Jeremia's Portfolio">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Import Inter, Merriweather -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <!-- Stylesheets-->
     <link href="css/index.css" rel="stylesheet" type="text/css" media="all">
-    <link rel="icon" href="favicon.png">
-    <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
-    <script src="js/main.js" type='text/javascript'></script>
+     <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="js/index.js" type='text/javascript'></script>
   </head>
 
+
+  <!-- navigation -->
+  <header class="header">
+    <a href="/home.html">
+      <img style="vertical-align:middle" class="logo" src="images/index/logo.png">
+      <span class="title">JEREMIA LO</span>
+    </a>
+  </header> 
+
   <body>
-      <center>
-          <div>
-            <div class="cursor"></div>
-            <a href="home.html">
-              <img class="home" src="images/index/house.png">
-            </a>
+    <!-- mix blend cursor -->
+    <div class="cursor"></div>
+
+    <!-- home container -->
+    <div class="bigFlex">
+      <div class="aboutMenu">
+          <div class="menuRow1"> 
+            <span class="indexButton"><a href="colgate.html"><img class="shadowfilter workImg" src="images/index/work.png"></a>
+              <div class="indexButtonText">WORK<span class="folder">.svg</span></div>
+            </span> 
+            <span class="indexButton"><a href="art.html"><img class="shadowfilter artImg" src="images/index/art.png"></a>
+              <div class="indexButtonText">ART<span class="folder">.png</span></div>
+            </span>
+            <span class="indexButton"><a href="writing.html"><img class="shadowfilter writingImg" src="images/index/writing.png"></a>
+              <div class="indexButtonText">WRITING<span class="folder">.txt</span></div>
+            </span>  
+            <span class="indexButton"><a href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:911014cd-4147-4663-b0a6-de97fb291dc5"><img class="shadowfilter resumeImg" src="images/index/resume.png"></a>
+              <div class="indexButtonText">RESUME<span class="folder">.pdf</span></div>
+            </span> 
           </div>
 
-          <div id="smoke">
-            <span class="s0"></span>
-            <span class="s1"></span>
-            <span class="s2"></span>
-            <span class="s3"></span>
-            <span class="s4"></span>
-            <span class="s5"></span>
-            <span class="s6"></span>
-            <span class="s7"></span>
-            <span class="s8"></span>
-            <span class="s9"></span>
+          <div class="aboutButton"> 
+              <a href="about.html"><img class="floating aboutImg" style="width:250px;" src="images/index/portrait.png"></a>
+              <div class="aboutButtonText">ABOUT<span class="folder">.html</span></div>
+              </div>
           </div>
+      </div>
 
-          <div>
-            <a href="home.html">
-              enter
-            </a>
-          </div>
-
-        <div class='ground'>
-        </div>
-          
-      </center>
+      <!--footer-->
+        <p class="footer">aug 2022 · <a href="email:lojeremia@gmail.com">email me</a> ·  <a href="sitemap.html">sitemap</a></di>
+      </div>
   </body>
 </html>
+
+
+      

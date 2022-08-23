@@ -9,42 +9,42 @@ $(document).ready(function(){
 
   $(".aboutImg").hover(
     function() {
-        $(this).attr("src","images/home/portraitColor.png");
+        $(this).attr("src","images/index/portraitColor.png");
     },
     function() {
-        $(this).attr("src","images/home/portrait.png");
+        $(this).attr("src","images/index/portrait.png");
   });
 
   $(".workImg").hover(
     function() {
-        $(this).attr("src","images/home/workColor.png");
+        $(this).attr("src","images/index/workColor.png");
     },
     function() {
-        $(this).attr("src","images/home/work.png");
+        $(this).attr("src","images/index/work.png");
   });
   
   $(".artImg").hover(
     function() {
-        $(this).attr("src","images/home/artColor.png");
+        $(this).attr("src","images/index/artColor.png");
     },
     function() {
-        $(this).attr("src","images/home/art.png");
+        $(this).attr("src","images/index/art.png");
   });
 
   $(".writingImg").hover(
     function() {
-        $(this).attr("src","images/home/writingColor.png");
+        $(this).attr("src","images/index/writingColor.png");
     },
     function() {
-        $(this).attr("src","images/home/writing.png");
+        $(this).attr("src","images/index/writing.png");
   });
 
   $(".resumeImg").hover(
     function() {
-        $(this).attr("src","images/home/resumeColor.png");
+        $(this).attr("src","images/index/resumeColor.png");
     },
     function() {
-        $(this).attr("src","images/home/resume.png");
+        $(this).attr("src","images/index/resume.png");
   });
 });
 

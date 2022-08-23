@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="icon" href="favicon.png">
+        <title>Jeremia Lo</title>
+        <meta name="description" content="Jeremia's Portfolio">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Import Inter, Merriweather -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+        <!-- Stylesheets-->
+        <link href="css/index.css" rel="stylesheet" type="text/css" media="all">
+        <link href="css/work.css" rel="stylesheet" type="text/css" media="all">
+         <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+        <script src="js/work.js" type='text/javascript'></script>
+        <script type="text/javascript" src="jquery.lazy.min.js"></script>
+    </head>
+
+    <!-- navigation -->
+    <header class="header">
+        <a href="/index.html">
+        <img style="vertical-align:middle" class="logo" src="images/index/logo.png">
+        <span class="title">JEREMIA LO</span>
+        </a>
+    </header> 
+
+    <body>
+       
+        <!-- title -->
+        <img class="main-image" src="images/nasa/nasa-header.png" alt="colgate logo"></img>
+        <div class="company scroll-trigger_move-in-left-fade-in">
+            NASA SUITS
+        </div>
+        <div class="project-title scroll-trigger_move-in-left-fade-in">
+            <p>Moon Buddy</p>
+            <p class="sub">An AR System for Lunar Expeditions</p>
+        </div>
+        <div class="subtitle-container scroll-trigger_move-in-left-fade-in">
+            <img class="star" src="images/star.png"></img>
+            <section class="subtitle-text">
+                Moon Buddy is a voice-controlled, heads-up augmented 
+                reality display designed to assist astronauts on 
+                future lunar exploration missions. I played a core part in
+                user research, prototyping, and usability testing. 
+            </section>
+        </div>
+
+        <!-- stats -->
+        <ul class="cards scroll-trigger_move-in-left-fade-in">
+            <li>
+                <h2>Team</h2>
+                <div class="card-text">
+                    <p>Anita Sun</p>
+                    <p>CMU SUITS Team</p>
+                </div>
+            </li>
+            <li>
+                <h2>Duration</h2>
+                <div class="card-text">
+                    <p>Sep 2021 - Sep 2022</p>
+                    <p>(1 year)</p>
+                </div>
+            </li>
+            <li>
+                <h2>Role</h2>
+                <div class="card-text">
+                    <p>UX Researcher</p>
+                    <p>UX Designer</p>
+                </div>
+            </li>
+        </ul>
+        
+        <hr>
+
+        <!-- PROBLEM -->
+        <main class="flex-container scroll-trigger_move-in-left-fade-in">
+            <aside class="sidebar">
+                <h2>Problem</h2>
+                <img class="interview-icon" src="images/nasa/astrohead.png"></img>
+                <img class="interview-icon" src="images/nasa/astrohead.png"></img>
+            </aside>
+            <section class="main-content">
+                <p>
+                    As NASA plans for long-term stays on the moon in
+                    <a href="https://www.nasa.gov/specials/artemis/">Artemis</a>
+                    missions and beyond, astronauts have an increased need for 
+                    autonomy-enabling tools that can help them overcome the many challenges of 
+                    performing <strong>extravehicular activities</strong> on the lunar surface.
+                </p>
+                <div class="subtitle-container">
+                    <p class="quote">"Moving your finger [in a spacesuit] is like picking up 
+                        a gallon of milk."
+                    </p>
+                </div>
+
+                <p class="right-align">⁠— Interview with Jay Apt, former NASA Astronaut, 2021
+
+                <div class="subtitle-container">
+                    <p class="quote">"Information presented should be simple, 
+                        limited, and relevant to the current 
+                        operational task...this way [astronauts can] concentrate..."  
+                    </p>
+                </div>
+
+                ⁠— <a href="https://www.hq.nasa.gov/alsj/AstroIntrvwsSumm.pdf">Interviews with Apollo Lunar Surface Astronauts, 1994</a>
+
+            </section>
+        </main>
+
+        <hr>
+
+        <!-- PROPOSAL -->
+        <main class="flex-container scroll-trigger_move-in-left-fade-in">
+            <aside class="sidebar">
+                <h2>Proposal</h2>
+            </aside>
+            <section class="main-content">
+
+                How might we help astroanuts better navigate and conduct
+                explorations on the moon? 
+
+                - voice user Interface, simple
+                - paper, feedback
+                - background on NASA Challenge
+            </section>
+        </main>
+        
+        <hr>
+
+        <!-- RESEARCH -->
+        <main class="flex-container scroll-trigger_move-in-left-fade-in">
+            <aside class="sidebar">
+                <h2>Research</h2>
+            </aside>
+            <section class="main-content">
+
+                Preliminary Research
+
+                How to begin work in an unfamiliar field with high levels of complexity?
+
+                To gain an understanding of a technical problem space I was
+                largely unfamiliar with, I looked into three major areas 
+                when conducting prelimary research: 
+
+                1. Previous SUITS publications:
+                Although the SUITS challenge is different every year, other teams had a lot
+                of valuable research and findings to provide.
+                
+                2. NASA AR Research Projects: 
+                NASA and their partners have been 
+                exploring and testing many AR-based applications to assist with
+                a variety of space-related tasks.
+
+                3. Apollo Transcripts: 
+                Given that Apollo was the last time NASA sent 
+                astronauts to the moon, the audio transcripts for each mission were a 
+                treasure trove of data for identifying real user pain points in an 
+                environment far, far away.
+
+                User Interview with Jay Apt
+
+                Pain Points
+                Based on this research, Anita and I were able to determine the 
+                primary pain points, which ultimately shaped our core design goals.
+        
+                1. Pain Point: Poor Mobility in Spacesuit
+                    Goal: MoonBuddy must be operable while users 
+                    are wearing EVA gloves and while executing dexterous tasks.
+        
+                2. Pain Point: Limited Vision from Helmet + Harsh Lighting COnditions
+                    Goal: MoonBuddy must provide environmental awareness of
+                    hazardous regions and be unobtrusive to astronaut view.
+        
+                3. Pain Point: Limited Communication with MCC
+                    Goal: MoonBuddy must give both the MCC and astronauts the 
+                    autonomy to modify tasks and mission procedure at any point in the EVA.
+        
+                4. Pain Point: Cognitive Overload 
+                    Goal: MoonBuddy must provide information in a simple manner and 
+                    limit information to show only what is needed. 
+
+                Personas
+                - Strength: Nav, Weakness: Geo
+                - Vice versa
+
+                User Journey & Scenarios
+            </section>
+        </main>
+        
+        <hr>
+
+        <!-- IDEATION -->
+        <main class="flex-container scroll-trigger_move-in-left-fade-in">
+            <aside class="sidebar">
+                <h2>Ideation</h2>
+            </aside>
+            <section class="main-content">
+                Value Proposition
+                (1)  Voice User Interface
+
+                "Voice recognition systems must be able to allow crewmembers to 
+                record observations without memorized commands that encumbers the crew."
+
+            </section>
+        </main>
+        
+        <hr>
+
+        <!-- SELECTED MEDIA -->
+        <main class="flex-container scroll-trigger_move-in-left-fade-in">
+            <aside class="sidebar">
+                <h2>Selected Media</h2>
+            </aside>
+            <section class="main-content">
+                <p>
+                    Helping Design the Next Generation of Spacesuits<br> 
+                    <a href="https://www.engineering.com/story/helping-design-the-next-generation-of-spacesuits">engineering.com, Apr 2022 ↗</a>
+                </p>
+                <p>
+                    Moon Buddy Team Working with NASA on Spacesuits for Lunar Exploration<br> 
+                    <a href="https://www.cmu.edu/news/stories/archives/2022/april/moon-buddy.html">CMU News, Apr 2022 ↗</a>
+                </p>
+                <p>
+                    Carnegie Mellon students come to Alle-Kiski Valley to demonstrate STEM skills<br> 
+                    <a href="https://triblive.com/local/carnegie-mellon-students-come-to-alle-kiski-valley-to-demonstrate-stem-skills-also-working-on-moon-project/">TribLive, Mar 2022 ↗</a>
+                </p>
+            </section>
+        </main>
+
+        <hr>
+        
+        <!-- REFLECTION -->
+        <main class="flex-container scroll-trigger_move-in-left-fade-in">
+            <aside class="sidebar">
+                <h2>Relection</h2>
+            </aside>
+            <section class="main-content">
+                <p>whee</p>
+            </section>
+        </main>
+               
+        <hr>
+        
+        <!-- NOTES -->
+        <main class="flex-container scroll-trigger_move-in-left-fade-in">
+            <aside class="sidebar">
+                <h2>Notes</h2>
+            </aside>
+            <section class="main-content">
+                <div class="subtitle-container">
+                    <p class="quote2">The research poster for this project has 
+                    been accepted to <a href="https://uist.acm.org/uist2022/">
+                    UIST '22</a>. <br>Link coming soon (mid-September) 🌙!</p>
+                </div>
+            </section>
+        </main>
+
+
+        
+        <!--footer-->
+    </body>
+</html>
+
+        
+    
+
+<p>
+    Future space exploration missions will have an increased need for 
+    equipping astronauts with the autonomy-enabling tools they need for 
+    the elevated demands of lunar surface exploration and extreme terrestrial access.
+</p>
+<p> 
+    NASA has invested in AR as a solution in the form of JARVIS, a 
+    Joint Augmented Reality Visual Informatics System that is integrated
+    directly into the spacesuit.
+</p>  
+    To meet NASA's open challenge to design an AR information display 
+    for lunar exploration, our team developed MoonBuddy, a voice-based AR
+    application that integrates navigation, task assistance, documentation
+    tools, and hazard avoidance through geometry-aware surface highlighting.
+
+</p>
+        
+       
+
+
+        Design Explorations
+        Our design team continously iterated our designs through weekly feedback
+        sessions with the rest of our team and our mentor from NASA.
+
+        - snapshots -
+        (Month Year) Feature
+
+        Final Design
+        Below is the final design on the HoloLens2 that our team 
+        tested with multiple stakeholders at Johnson Space Center in June 2022. 
+
+        Design System
+        
+        1. Onboarding
+        Users are onboarded through a hybrid method to get used to the 
+        voice commands and visual layout.
+
+        2. Navigation
+        Users can say "Go to Point X" for visual guidance to their next location.
+
+        3. Science Sampling
+        Users are walked through the sampling process for the specific types of
+        samples they've found at their destination site.
+
+        4. Lunar Search and Rescue
+        Users can recieve alerts about crew members in distress and respond
+        quickly and efficiently. 
+
+        5. Hazard Avoidance
+        Users can utilize the spatial mapping feature to easily detect 
+        obstacles such as rocks and craters.        
+
+        User Testing Results 
+        We were able to conduct 2 user testing sessions at the JSC Rock Yard 
+        under simulated lunar lighting conditions btween 7pm and midnight.
+
+        Participants went through a 45-minute training before preceding to 
+        the experiemental session, where they were tasked to navigate to 3
+        different sampling sites and document rock samples. A LSAR message
+        was sent at a random time within the testing session, and we
+        concluded with a short debrief to gather user feedback.
+
+        Users appreciated...
+        1. The simple voice commands and guided nature of MoonBuddy, 
+        especially during the more complicated geological sampling tasks.
+        2. The surface edge detection feature that allowed them to 
+        avoid rocks in the darkness.
+        3. The intuitive and easy to use UI 
+
+        Users wished that...
+        1. AR navigation could be anchored to the real world to add
+        superimposed landmarks in an environment that lacks them.
+        2. There was adapative brightness for UI elements to balance visibility. 
+
+
+        Reflection
+
+        While this was our team's first and last year working on this project,
+        we saw a lot of opportunities for further refinement in the future, 
+        especially through more experimentation with AR's unique ability to 
+        directly interact and impact an astronaut's immediate surroundings. 
+
+        
+
+        

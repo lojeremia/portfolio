@@ -1,176 +1,183 @@
+/* Color Pallete */
+:root {
+  --bg: #202124;
+  --purple: #EABFFF;
+  --gray: #9AA0A6;
+  --white: #E8EAED;
+  --gradient: linear-gradient(90deg, rgba(152,249,255,1) 0%, rgba(234,191,255,1) 100%);
+}
+
+/* Body */
 * {
-    margin: 0;
-    padding: 0;
-    cursor: none;
+  margin: 0;
+  padding: 0;
 } 
 
 html, body {
-    background-color: #141414;
-    min-height: 100vh;
+  font-family: Work Sans, sans-serif;
+  font-weight: 400;
+  background-color: #141414;
+  color: white;
+  min-height: 100vh;
+  text-align: center;
+  font-size: 16px;
 }
 
-/* SMOKE -- https://codepen.io/verlok/pen/DmeERp */
-
-/* Smoke container */
-
-#smoke {
-	position: absolute;
-    z-index: -9999;
-	bottom: 76vh;
-    left: 58vw;
-    z-index: 0;
-}
-
-/* smoke balls  right: 36%;*/
-#smoke span { 
-    display: block;
-    position: absolute;
-    border: 4vw solid #cdcdcd;
-    border-radius: 4vw;
-    opacity: 0;
-    transform: scale(0.2);
-    filter: blur(0.5vw);
-}
-
-/* Smoke animation */
-@keyframes smokeL {
-	0%   { transform: scale(0.2) translate(0, 0) }
-	10%  { opacity: 1; transform: scale(0.2) translate(0, -2vw) }
-	100% { opacity: 0; transform: scale(1) translate(-2vw, -13vw) }
-}
-
-@keyframes smokeR {
-	0%   { transform: scale(0.2) translate(0, 0) }
-	10%  { opacity: 1; transform: scale(0.2) translate(0, -2vw) }
-	100% { opacity: 0; transform: scale(1) translate(2vw, -13vw) }
-}
-
-#smoke .s0 { animation: smokeL 10s 0s infinite }
-#smoke .s1 { animation: smokeR 10s 1s infinite }
-#smoke .s2 { animation: smokeL 10s 2s infinite }
-#smoke .s3 { animation: smokeR 10s 3s infinite }
-#smoke .s4 { animation: smokeL 10s 4s infinite }
-#smoke .s5 { animation: smokeR 10s 5s infinite }
-#smoke .s6 { animation: smokeL 10s 6s infinite }
-#smoke .s7 { animation: smokeR 10s 7s infinite }
-#smoke .s8 { animation: smokeL 10s 8s infinite }
-#smoke .s9 { animation: smokeR 10s 9s infinite }
-
-
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-    .cursor {
-        display:none;
+/* Header */
+.header > img,
+    .header > h1 {
+        display: inline-block;
     }
-    #smoke {
-        position: absolute;
-        z-index:0;
-        left: 60vw;
-    }
+
+.header {
+  width: 100%;
+  height: 64px;
+  margin-top: 40px;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-    .cursor {
-        display:none;
-    }
-    #smoke {
-        position: absolute;
-        z-index:0;
-        left: 60vw;
-    }
+.title {
+  color: var(--white);
+  font-size: 20px;
+  text-align: right;
+  font-weight: 100;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-    .cursor {
-        display:block;
-    }
-    #smoke {
-        position: absolute;
-        z-index: 0;
-        left: 59vw;
-    }
+.folder {
+  color: var(--gray);
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-    .cursor {
-        display:block;
-    }
-    #smoke {
-        position: absolute;
-        z-index: 0;
-        left: 57vw;
-    }
+.logo {
+  min-width: 40px;
+  min-height: 40px;
+  width: 1vw;
+  margin-right: 35vw;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-    .cursor {
-        display: block;
-    }
-    #smoke {
-        position: absolute;
-        z-index: 0;
-        left: 54vw;
-    }
+/* Navigation */
+.bigFlex {
+  display: flex;
+  flex-direction: column;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 2000px) {
-    .cursor {
-        display: block;
-    }
-    #smoke {
-        position: absolute;
-        z-index: 0;
-        bottom: 78vh;
-        left: 52.5vw;
-    }
+.aboutMenu {
+  order: 1;
+  max-width: 600px;
+  display: flex;
+  margin: auto;
 }
 
-.home {
-    max-height: 482.85px;
-    max-width: 470.6px;
-    transition: all 0.20s ease-in;
-    position: relative;
-    width: 50vw;
-    margin-top: 25vh;
-    z-index: 1;
+.menuRow1 {
+  flex: 60%;
+  margin-top: 148px;
+  margin-right: 50px;
 }
 
-.home:hover {
-    filter: brightness(110%) saturate(105%);
+.indexButton {
+    display:inline-block;
+    margin: 10px 20px 20px 20px;
+    transition: all 0.25s ease-in;
+    transform: scale(1);
 }
 
+.indexButtonText {
+  margin-top: 10px;
+}
+
+.aboutButtonText {
+  transition: all 0.25s ease-in;
+  display: block;
+}
+
+.aboutButton {
+  position: relative;
+  transition: all 0.25s ease-in;
+  display: block;
+  margin-top: 100px;
+  flex: 40%;
+}
+
+/* About Image */
+.floating {   
+  animation-name: floating; 
+  animation-duration: 2.75s; 
+  animation-iteration-count: infinite; 
+  animation-timing-function: ease-in-out; 
+  margin-bottom:20px;
+} 
+
+@keyframes floating { 
+  0% { transform: translate(0,  0px); } 
+  50%  { transform: translate(0, 10px); } 
+  100%   { transform: translate(0, -0px); }     
+} 
+
+.shadowfilter:hover {
+  -webkit-filter: drop-shadow(0px 0px 4px var(--purple));
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .indexButton:hover, .indexButton2:hover {
+      transform: scale(1.065) perspective(1px);
+      color: var(--purple);
+      filter: brightness(109%) saturate(150%);
+     
+  }
+
+  .aboutButton:hover .aboutButtonText {
+      color: var(--purple);
+  }
+
+  .aboutImg {
+    -webkit-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+  }
+
+  .aboutImg:hover {
+      -webkit-filter: drop-shadow(0px 0px 4px var(--purple)) saturate(175%);
+  }
+}
+
+.footer {
+  color: var(--gray);
+  font-size: 14px;
+  position: fixed;
+  left: 0;
+  bottom: 50px;
+  width: 100%;
+}
+
+
+/* Mobile View */
+@media (max-width: 786px) { 
+  .aboutMenu {
+    flex-direction: column;
+  }
+  
+  .menuRow1 {
+    order: 2;
+    margin-top: 30px;
+    margin-right: 25px;
+  }
+
+  .aboutButton {
+    order: 1;
+    margin-top: 40px;
+
+  }
+
+}
+
+
+/* Links */
 a {
-    color: #7c7c7c;
-    text-decoration: none;
-    font-size: calc(24px + 1.5vw);
-    height: auto;
-    transition: 0.2s;
-    z-index: 2;
+  color: var(--purple);
+  text-decoration: none;
+  transition: 0.2s;
 }
 
 a:hover {
-    transition: all 0.20s ease-in;
-    color: rgb(200, 200, 200);
+  transition: all 0.20s ease-in;
+  color: (--purple-hover);
 }
 
-.cursor {
-    position: fixed;
-    z-index: 10;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #ffffff;
-    transition: transform 350ms ease;
-    transform: translate(-50%, -50%) scale(1);
-    pointer-events: none;
-    mix-blend-mode: difference;
-}
-
-.cursorHover {
-    transform: translate(-50%, -50%) scale(3);
-}

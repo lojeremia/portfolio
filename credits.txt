@@ -1,0 +1,9 @@
+
+CREDITS
+
+1. Home Layout: https://bikobatanari.art/
+2. Mix Blend Cursor: https://codepen.io/Lomzo/pen/qBBROLm
+3. Scroll Progress Bar: https://codepen.io/EricPorter/pen/rNexdrG
+4. Flex + Grid Demo: https://codepen.io/rachelandrew/pen/YqqdXL
+5. Responsive Video: https://codepen.io/chandrashekhar/pen/awQxrv
+6. Query and Scroll: https://codepen.io/hirodashi/pen/EdXgmX
