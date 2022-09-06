@@ -17,33 +17,59 @@
     <script src="js/index.js" type='text/javascript'></script>
   </head>
 
-
   <!-- navigation -->
-  <header class="header">
-    <a href="/home.html">
-      <img style="vertical-align:middle" class="logo" src="images/index/logo.png">
-      <span class="title">JEREMIA LO</span>
-    </a>
-  </header> 
+  <nav class="navbar">
+    <a href="/index.html" alt="">
+      <img style="vertical-align:middle" class="logo" src="images/index/logo.png" alt="LOGO"></div>
+    </a> 
+    <a class="title" href="/index.html">jeremia lo</a>
+
+    <div class="push-left">
+      <button id="menu-toggler" data-class="menu-active" class="hamburger">
+        <span class="hamburger-line hamburger-line-top"></span>
+        <span class="hamburger-line hamburger-line-middle"></span>
+        <span class="hamburger-line hamburger-line-bottom"></span>
+      </button>
+  
+      <!--  Menu compatible with wp_nav_menu  -->
+      <ul id="primary-menu" class="menu nav-menu">
+        <li class="menu-item current-menu-item"><a class="nav__link"  href="#">Work</a>
+          <ul class="sub-nav" >
+            <li><a class="sub-nav__link" href="/colgate.html">hum kids</a></li>
+            <li><a class="sub-nav__link" href="/nasa.html">NASA SUITS</a></li>
+            <li><a class="sub-nav__link" href="/playground.html">Playground</a></li>
+          </ul>
+        </li>
+        <li class="menu-item "><a class="nav__link"  href="#">Art</a>
+        <li class="menu-item "><a class="nav__link"  href="#">Blog</a>
+        <li class="menu-item dropdown"><a class="nav__link"  href="#">About</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- end navigation -->
 
   <body>
     <!-- mix blend cursor -->
     <div class="cursor"></div>
 
+    <div class="construction">
+      [ This site is under construction! ]
+    </div>
+    
     <!-- home container -->
     <div class="bigFlex">
       <div class="aboutMenu">
           <div class="menuRow1"> 
-            <span class="indexButton"><a href="colgate.html"><img class="shadowfilter workImg" src="images/index/work.png"></a>
+            <span class="indexButton"><a href="work.html"><img class="shadowfilter workImg" src="images/index/work.png"></a>
               <div class="indexButtonText">WORK<span class="folder">.svg</span></div>
             </span> 
             <span class="indexButton"><a href="art.html"><img class="shadowfilter artImg" src="images/index/art.png"></a>
               <div class="indexButtonText">ART<span class="folder">.png</span></div>
             </span>
             <span class="indexButton"><a href="writing.html"><img class="shadowfilter writingImg" src="images/index/writing.png"></a>
-              <div class="indexButtonText">WRITING<span class="folder">.txt</span></div>
+              <div class="indexButtonText">BLOG<span class="folder">.txt</span></div>
             </span>  
-            <span class="indexButton"><a href="https://acrobat.adobe.com/link/track?uri=urn:aaid:scds:US:911014cd-4147-4663-b0a6-de97fb291dc5"><img class="shadowfilter resumeImg" src="images/index/resume.png"></a>
+            <span class="indexButton"><a href="https://acrobat.adobe.com/link/review?uri=urn:aaid:scds:US:c25f3e13-948c-4601-859d-012541be7a6c"><img class="shadowfilter resumeImg" src="images/index/resume.png"></a>
               <div class="indexButtonText">RESUME<span class="folder">.pdf</span></div>
             </span> 
           </div>

@@ -46,6 +46,15 @@ $(document).ready(function(){
     function() {
         $(this).attr("src","images/index/resume.png");
   });
+
+  // Toggle menu on click
+  $("#menu-toggler").click(function() {
+    toggleBodyClass("menu-active");
+  });
+
+  function toggleBodyClass(className) {
+    document.body.classList.toggle(className);
+  }
 });
 
 $(document).mousemove(function(e) {
@@ -84,3 +93,25 @@ $(document).mouseenter(function(e) {
   cursor.show()
 
 });
+
+window.onload=function(){
+  navFade();
+}
+
+const navFade = () => {
+  const burgerIcon=document.querySelector(".burger")
+  const items = document.querySelectorAll(".item");
+
+  burgerIcon.addEventListener('click', () => {
+    items.forEach((item,index)=>{
+      item.classList.toggle("active")
+      if(item.style.animation){
+        item.style.animation = "";
+      }
+      else{
+        item.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 1}s`;
+      }
+    });
+    burgerIcon.classList.toggle('mark')
+  });
+};

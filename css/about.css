@@ -1,0 +1,140 @@
+/* STATUS BAR */
+  
+.capsule {
+    display: inline block;
+    background: #2d2e32;
+    width: 240px;
+    border-radius: 2rem;
+    justify-content: space-around;
+    align-items: center;
+    float: right;
+    margin-top: -65px;
+    height: 42px;
+}
+  
+.capsule-container {
+    display:flex;
+    width: 100%;
+    align-items: center;
+}
+  
+.status {
+    width: 10px;
+    align-self: right;
+    padding: 1rem;
+    padding-right: 25px;
+}
+  
+.circle {
+    margin-left: 10px;
+    width: 0.8rem;
+    height: 0.8rem;
+    background-color: #92C97A;
+    border-radius: 50%;
+    animation: crescendo 1s alternate infinite ease-in;
+}
+
+@keyframes crescendo {
+    0%   {
+      transform: scale(.8);
+      opacity: 0.8;
+    }
+    100% {
+      transform: scale(1.1);
+      opacity: 1;
+    }
+}
+
+.status-txt {
+    color: var(--white); 
+}
+
+/* ABOUT TITLES */
+.about-title {
+    font-weight: 700;
+    color: var(--white);
+    font-size: 48px;
+    margin: 0px 0 20px 0;
+    font-family: "Merriweather";
+    line-height: 46px;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    margin: 40px 0 40px 0;
+}
+
+.img-container {
+    position: relative;
+    width: 100%;
+}
+  
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+    box-shadow: 10px 10px 5px rgb(4, 4, 4);
+}
+  
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(37, 29, 40, 0.9);
+}
+  
+  .img-container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+.about-subtitle {
+    font-weight: 700;
+    font-size: 32px;
+    margin: 60px 0 20px 0;
+    font-family: "Merriweather";
+    line-height: 46px;
+}
+
+p {
+    margin-top: 10px;
+    font-family: "Inter";
+}
+
+.email {
+    font-size: 32px;
+    line-height: 48px;
+    margin: 20px 0 100px 0;
+}
+
+.sidebar {
+    padding-right: 40px;
+}
+
+.subtitle-container {
+    margin: 40px 0px 40px 0px;
+}
+
+@media (max-width: 900px) { 
+    .about-image-side {
+        margin: 20px 0 60px 0;
+    }
+}

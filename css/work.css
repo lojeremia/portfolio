@@ -1,21 +1,18 @@
-body {
+.work-container {
+  max-width: 900px;
   text-align: left;
   font-family: 'Inter';
   line-height: 32px;
-  max-width: 960px;
-  min-width: 320px;
   margin: auto;
   padding: 100px;
 }
-
-/* PROJECT INTRO */
 
 strong {
   color: var(--white);
 }
 
 .main-image {
-  margin-top: 100px;
+  margin-top: 60px;
   width: 100%;
   height: auto;
 }
@@ -63,11 +60,22 @@ strong {
   margin: 0;
 }
 
+.main-paragraph {
+  padding-bottom: 30px;
+}
 
 .star {
   width: auto;
   max-height: 62px;
   margin-right: 20px;
+}
+
+.interview-icon {
+  width: 18%;
+  display: block;
+  margin-left: auto;
+  margin-top: 135px;
+  padding: 0px 40px 0px 0px;
 }
 
 /* REMOVE LATER */

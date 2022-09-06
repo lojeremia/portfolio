@@ -19,248 +19,273 @@
         <script type="text/javascript" src="jquery.lazy.min.js"></script>
     </head>
 
-    <!-- navigation -->
-    <header class="header">
-        <a href="/index.html">
-        <img style="vertical-align:middle" class="logo" src="images/index/logo.png">
-        <span class="title">JEREMIA LO</span>
-        </a>
-    </header> 
+       <!-- navigation -->
+       <nav class="navbar">
+        <a href="/index.html" alt="">
+        <img style="vertical-align:middle" class="logo" src="images/index/logo.png" alt="LOGO"></div>
+        </a> 
+        <a class="title" href="/index.html">jeremia lo</a>
+
+        <div class="push-left">
+        <button id="menu-toggler" data-class="menu-active" class="hamburger">
+            <span class="hamburger-line hamburger-line-top"></span>
+            <span class="hamburger-line hamburger-line-middle"></span>
+            <span class="hamburger-line hamburger-line-bottom"></span>
+        </button>
+    
+        <!--  Menu compatible with wp_nav_menu  -->
+        <ul id="primary-menu" class="menu nav-menu">
+            <li class="menu-item current-menu-item"><a class="nav__link"  href="#">Work</a>
+            <ul class="sub-nav" >
+                <li><a class="sub-nav__link" href="/colgate.html">hum kids</a></li>
+                <li><a class="sub-nav__link" href="/nasa.html">NASA SUITS</a></li>
+                <li><a class="sub-nav__link" href="/playground.html">Playground</a></li>
+            </ul>
+            </li>
+            <li class="menu-item "><a class="nav__link"  href="#">Art</a>
+            <li class="menu-item "><a class="nav__link"  href="#">Blog</a>
+            <li class="menu-item dropdown"><a class="nav__link"  href="#">About</a></li>
+        </ul>
+        </div>
+    </nav>
+    <!-- end navigation -->
 
     <body>
-       
-        <!-- title -->
-        <img class="main-image" src="images/nasa/nasa-header.png" alt="colgate logo"></img>
-        <div class="company scroll-trigger_move-in-left-fade-in">
-            NASA SUITS
-        </div>
-        <div class="project-title scroll-trigger_move-in-left-fade-in">
-            <p>Moon Buddy</p>
-            <p class="sub">An AR System for Lunar Expeditions</p>
-        </div>
-        <div class="subtitle-container scroll-trigger_move-in-left-fade-in">
-            <img class="star" src="images/star.png"></img>
-            <section class="subtitle-text">
-                Moon Buddy is a voice-controlled, heads-up augmented 
-                reality display designed to assist astronauts on 
-                future lunar exploration missions. I played a core part in
-                user research, prototyping, and usability testing. 
-            </section>
-        </div>
+        <div class="work-container">
+            <!-- title -->
+            <img class="main-image" src="images/nasa/nasa-header.png" alt="colgate logo"></img>
+            <div class="company scroll-trigger_move-in-left-fade-in">
+                NASA SUITS
+            </div>
+            <div class="project-title scroll-trigger_move-in-left-fade-in">
+                <p>Moon Buddy</p>
+                <p class="sub">An AR Display for Lunar Expeditions</p>
+            </div>
+            <div class="subtitle-container scroll-trigger_move-in-left-fade-in">
+                <img class="star" src="images/star.png" alt=""></img>
+                <section class="subtitle-text">
+                    Moon Buddy is a voice-controlled, heads-up augmented 
+                    reality display designed to assist astronauts on 
+                    future lunar exploration missions. I played a core part in
+                    <strong>user research</strong>, <strong>prototyping</strong>, 
+                    and <strong>usability testing</strong>. 
+                </section>
+            </div>
 
-        <!-- stats -->
-        <ul class="cards scroll-trigger_move-in-left-fade-in">
-            <li>
-                <h2>Team</h2>
-                <div class="card-text">
-                    <p>Anita Sun</p>
-                    <p>CMU SUITS Team</p>
-                </div>
-            </li>
-            <li>
-                <h2>Duration</h2>
-                <div class="card-text">
-                    <p>Sep 2021 - Sep 2022</p>
-                    <p>(1 year)</p>
-                </div>
-            </li>
-            <li>
-                <h2>Role</h2>
-                <div class="card-text">
-                    <p>UX Researcher</p>
-                    <p>UX Designer</p>
-                </div>
-            </li>
-        </ul>
-        
-        <hr>
+            <!-- stats -->
+            <ul class="cards scroll-trigger_move-in-left-fade-in">
+                <li>
+                    <h2>Team</h2>
+                    <div class="card-text">
+                        <p>Anita Sun (Design) </p>
+                        <p>CMU SUITS (Dev, Outreach)</p>
+                    </div>
+                </li>
+                <li>
+                    <h2>Duration</h2>
+                    <div class="card-text">
+                        <p>Sep 2021 - Sep 2022</p>
+                        <p>(1 year)</p>
+                    </div>
+                </li>
+                <li>
+                    <h2>Role</h2>
+                    <div class="card-text">
+                        <p>UX Researcher</p>
+                        <p>UX Designer</p>
+                    </div>
+                </li>
+            </ul>
+            
+            <hr>
 
-        <!-- PROBLEM -->
-        <main class="flex-container scroll-trigger_move-in-left-fade-in">
-            <aside class="sidebar">
-                <h2>Problem</h2>
-                <img class="interview-icon" src="images/nasa/astrohead.png"></img>
-                <img class="interview-icon" src="images/nasa/astrohead.png"></img>
-            </aside>
-            <section class="main-content">
-                <p>
-                    As NASA plans for long-term stays on the moon in
-                    <a href="https://www.nasa.gov/specials/artemis/">Artemis</a>
-                    missions and beyond, astronauts have an increased need for 
-                    autonomy-enabling tools that can help them overcome the many challenges of 
-                    performing <strong>extravehicular activities</strong> on the lunar surface.
-                </p>
-                <div class="subtitle-container">
-                    <p class="quote">"Moving your finger [in a spacesuit] is like picking up 
-                        a gallon of milk."
+            <!-- PROBLEM -->
+            <main class="flex-container scroll-trigger_move-in-left-fade-in">
+                <aside class="sidebar">
+                    <h2>Problem</h2>
+                </aside>
+                <section class="main-content">
+                    <p class="main-paragraph">
+                        As NASA plans for long-term stays on the moon in
+                        <a href="https://www.nasa.gov/specials/artemis/">Artemis</a>
+                        missions and beyond, astronauts have an increased need for 
+                        autonomy-enabling tools that can help them overcome the 
+                        <strong>physical and mental challenges</strong> of performing <strong>extravehicular 
+                        activities</strong> (EVAs) on the lunar surface.
                     </p>
-                </div>
+                    
+                    <div class="subtitle-container">
+                        <p class="quote">"Moving your finger [in a spacesuit] is like picking up 
+                            a gallon of milk."
+                        </p>
+                    </div>
 
-                <p class="right-align">⁠— Interview with Jay Apt, former NASA Astronaut, 2021
+                    <p>— Interview with Jay Apt, former NASA Astronaut, 2021</p>⁠
 
-                <div class="subtitle-container">
-                    <p class="quote">"Information presented should be simple, 
-                        limited, and relevant to the current 
-                        operational task...this way [astronauts can] concentrate..."  
+                    <div class="subtitle-container">
+                        <p class="quote">"Information presented should be simple, 
+                            limited, and relevant to the current 
+                            operational task...this way [astronauts can] concentrate..."  
+                        </p>
+                    </div>
+
+                    ⁠— <a href="https://www.hq.nasa.gov/alsj/AstroIntrvwsSumm.pdf">Interviews with Apollo Lunar Surface Astronauts, 1994</a>
+
+                </section>
+            </main>
+
+            <hr>
+
+            <!-- PROPOSAL -->
+            <main class="flex-container scroll-trigger_move-in-left-fade-in">
+                <aside class="sidebar">
+                    <h2>Proposal</h2>
+                </aside>
+                <section class="main-content">
+
+                    How might we help astroanuts better navigate and conduct
+                    explorations on the moon? 
+
+                    - voice user Interface, simple
+                    - paper, feedback
+                    - background on NASA Challenge
+                </section>
+            </main>
+            
+            <hr>
+
+            <!-- RESEARCH -->
+            <main class="flex-container scroll-trigger_move-in-left-fade-in">
+                <aside class="sidebar">
+                    <h2>Research</h2>
+                </aside>
+                <section class="main-content">
+
+                    Preliminary Research
+
+                    How to begin work in an unfamiliar field with high levels of complexity?
+
+                    To gain an understanding of a technical problem space I was
+                    largely unfamiliar with, I looked into three major areas 
+                    when conducting prelimary research: 
+
+                    1. Previous SUITS publications:
+                    Although the SUITS challenge is different every year, other teams had a lot
+                    of valuable research and findings to provide.
+                    
+                    2. NASA AR Research Projects: 
+                    NASA and their partners have been 
+                    exploring and testing many AR-based applications to assist with
+                    a variety of space-related tasks.
+
+                    3. Apollo Transcripts: 
+                    Given that Apollo was the last time NASA sent 
+                    astronauts to the moon, the audio transcripts for each mission were a 
+                    treasure trove of data for identifying real user pain points in an 
+                    environment far, far away.
+
+                    User Interview with Jay Apt
+
+                    Pain Points
+                    Based on this research, Anita and I were able to determine the 
+                    primary pain points, which ultimately shaped our core design goals.
+            
+                    1. Pain Point: Poor Mobility in Spacesuit
+                        Goal: MoonBuddy must be operable while users 
+                        are wearing EVA gloves and while executing dexterous tasks.
+            
+                    2. Pain Point: Limited Vision from Helmet + Harsh Lighting COnditions
+                        Goal: MoonBuddy must provide environmental awareness of
+                        hazardous regions and be unobtrusive to astronaut view.
+            
+                    3. Pain Point: Limited Communication with MCC
+                        Goal: MoonBuddy must give both the MCC and astronauts the 
+                        autonomy to modify tasks and mission procedure at any point in the EVA.
+            
+                    4. Pain Point: Cognitive Overload 
+                        Goal: MoonBuddy must provide information in a simple manner and 
+                        limit information to show only what is needed. 
+
+                    Personas
+                    - Strength: Nav, Weakness: Geo
+                    - Vice versa
+
+                    User Journey & Scenarios
+                </section>
+            </main>
+            
+            <hr>
+
+            <!-- IDEATION -->
+            <main class="flex-container scroll-trigger_move-in-left-fade-in">
+                <aside class="sidebar">
+                    <h2>Ideation</h2>
+                </aside>
+                <section class="main-content">
+                    Value Proposition
+                    (1)  Voice User Interface
+
+                    "Voice recognition systems must be able to allow crewmembers to 
+                    record observations without memorized commands that encumbers the crew."
+
+                </section>
+            </main>
+            
+            <hr>
+
+            <!-- SELECTED MEDIA -->
+            <main class="flex-container scroll-trigger_move-in-left-fade-in">
+                <aside class="sidebar">
+                    <h2>Selected Media</h2>
+                </aside>
+                <section class="main-content">
+                    <p>
+                        Helping Design the Next Generation of Spacesuits<br> 
+                        <a href="https://www.engineering.com/story/helping-design-the-next-generation-of-spacesuits">engineering.com, Apr 2022 ↗</a>
                     </p>
-                </div>
+                    <p>
+                        Moon Buddy Team Working with NASA on Spacesuits for Lunar Exploration<br> 
+                        <a href="https://www.cmu.edu/news/stories/archives/2022/april/moon-buddy.html">CMU News, Apr 2022 ↗</a>
+                    </p>
+                    <p>
+                        Carnegie Mellon students come to Alle-Kiski Valley to demonstrate STEM skills<br> 
+                        <a href="https://triblive.com/local/carnegie-mellon-students-come-to-alle-kiski-valley-to-demonstrate-stem-skills-also-working-on-moon-project/">TribLive, Mar 2022 ↗</a>
+                    </p>
+                </section>
+            </main>
 
-                ⁠— <a href="https://www.hq.nasa.gov/alsj/AstroIntrvwsSumm.pdf">Interviews with Apollo Lunar Surface Astronauts, 1994</a>
-
-            </section>
-        </main>
-
-        <hr>
-
-        <!-- PROPOSAL -->
-        <main class="flex-container scroll-trigger_move-in-left-fade-in">
-            <aside class="sidebar">
-                <h2>Proposal</h2>
-            </aside>
-            <section class="main-content">
-
-                How might we help astroanuts better navigate and conduct
-                explorations on the moon? 
-
-                - voice user Interface, simple
-                - paper, feedback
-                - background on NASA Challenge
-            </section>
-        </main>
-        
-        <hr>
-
-        <!-- RESEARCH -->
-        <main class="flex-container scroll-trigger_move-in-left-fade-in">
-            <aside class="sidebar">
-                <h2>Research</h2>
-            </aside>
-            <section class="main-content">
-
-                Preliminary Research
-
-                How to begin work in an unfamiliar field with high levels of complexity?
-
-                To gain an understanding of a technical problem space I was
-                largely unfamiliar with, I looked into three major areas 
-                when conducting prelimary research: 
-
-                1. Previous SUITS publications:
-                Although the SUITS challenge is different every year, other teams had a lot
-                of valuable research and findings to provide.
+            <hr>
+            
+            <!-- REFLECTION -->
+            <main class="flex-container scroll-trigger_move-in-left-fade-in">
+                <aside class="sidebar">
+                    <h2>Relection</h2>
+                </aside>
+                <section class="main-content">
+                    <p>whee</p>
+                </section>
+            </main>
                 
-                2. NASA AR Research Projects: 
-                NASA and their partners have been 
-                exploring and testing many AR-based applications to assist with
-                a variety of space-related tasks.
-
-                3. Apollo Transcripts: 
-                Given that Apollo was the last time NASA sent 
-                astronauts to the moon, the audio transcripts for each mission were a 
-                treasure trove of data for identifying real user pain points in an 
-                environment far, far away.
-
-                User Interview with Jay Apt
-
-                Pain Points
-                Based on this research, Anita and I were able to determine the 
-                primary pain points, which ultimately shaped our core design goals.
-        
-                1. Pain Point: Poor Mobility in Spacesuit
-                    Goal: MoonBuddy must be operable while users 
-                    are wearing EVA gloves and while executing dexterous tasks.
-        
-                2. Pain Point: Limited Vision from Helmet + Harsh Lighting COnditions
-                    Goal: MoonBuddy must provide environmental awareness of
-                    hazardous regions and be unobtrusive to astronaut view.
-        
-                3. Pain Point: Limited Communication with MCC
-                    Goal: MoonBuddy must give both the MCC and astronauts the 
-                    autonomy to modify tasks and mission procedure at any point in the EVA.
-        
-                4. Pain Point: Cognitive Overload 
-                    Goal: MoonBuddy must provide information in a simple manner and 
-                    limit information to show only what is needed. 
-
-                Personas
-                - Strength: Nav, Weakness: Geo
-                - Vice versa
-
-                User Journey & Scenarios
-            </section>
-        </main>
-        
-        <hr>
-
-        <!-- IDEATION -->
-        <main class="flex-container scroll-trigger_move-in-left-fade-in">
-            <aside class="sidebar">
-                <h2>Ideation</h2>
-            </aside>
-            <section class="main-content">
-                Value Proposition
-                (1)  Voice User Interface
-
-                "Voice recognition systems must be able to allow crewmembers to 
-                record observations without memorized commands that encumbers the crew."
-
-            </section>
-        </main>
-        
-        <hr>
-
-        <!-- SELECTED MEDIA -->
-        <main class="flex-container scroll-trigger_move-in-left-fade-in">
-            <aside class="sidebar">
-                <h2>Selected Media</h2>
-            </aside>
-            <section class="main-content">
-                <p>
-                    Helping Design the Next Generation of Spacesuits<br> 
-                    <a href="https://www.engineering.com/story/helping-design-the-next-generation-of-spacesuits">engineering.com, Apr 2022 ↗</a>
-                </p>
-                <p>
-                    Moon Buddy Team Working with NASA on Spacesuits for Lunar Exploration<br> 
-                    <a href="https://www.cmu.edu/news/stories/archives/2022/april/moon-buddy.html">CMU News, Apr 2022 ↗</a>
-                </p>
-                <p>
-                    Carnegie Mellon students come to Alle-Kiski Valley to demonstrate STEM skills<br> 
-                    <a href="https://triblive.com/local/carnegie-mellon-students-come-to-alle-kiski-valley-to-demonstrate-stem-skills-also-working-on-moon-project/">TribLive, Mar 2022 ↗</a>
-                </p>
-            </section>
-        </main>
-
-        <hr>
-        
-        <!-- REFLECTION -->
-        <main class="flex-container scroll-trigger_move-in-left-fade-in">
-            <aside class="sidebar">
-                <h2>Relection</h2>
-            </aside>
-            <section class="main-content">
-                <p>whee</p>
-            </section>
-        </main>
-               
-        <hr>
-        
-        <!-- NOTES -->
-        <main class="flex-container scroll-trigger_move-in-left-fade-in">
-            <aside class="sidebar">
-                <h2>Notes</h2>
-            </aside>
-            <section class="main-content">
-                <div class="subtitle-container">
-                    <p class="quote2">The research poster for this project has 
-                    been accepted to <a href="https://uist.acm.org/uist2022/">
-                    UIST '22</a>. <br>Link coming soon (mid-September) 🌙!</p>
-                </div>
-            </section>
-        </main>
+            <hr>
+            
+            <!-- NOTES -->
+            <main class="flex-container scroll-trigger_move-in-left-fade-in">
+                <aside class="sidebar">
+                    <h2>Notes</h2>
+                </aside>
+                <section class="main-content">
+                    <div class="subtitle-container">
+                        <p class="quote2">The research poster for this project has 
+                        been accepted to <a href="https://uist.acm.org/uist2022/">
+                        UIST '22</a>. <br>Link to poster and video coming soon!</p>
+                    </div>
+                </section>
+            </main>
 
 
-        
-        <!--footer-->
+            
+            <!--footer-->
+        </div>
     </body>
 </html>
 

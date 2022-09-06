@@ -7,3 +7,6 @@ CREDITS
 4. Flex + Grid Demo: https://codepen.io/rachelandrew/pen/YqqdXL
 5. Responsive Video: https://codepen.io/chandrashekhar/pen/awQxrv
 6. Query and Scroll: https://codepen.io/hirodashi/pen/EdXgmX
+7. Responsive Nav Bar: https://codepen.io/Vitun/details/vwKdwY
+8. Magnific Image Gallery: https://codepen.io/JiiB/details/xgdOjw
+9. Status Bar: https://codepen.io/letsandeepio/pen/oOexoP
