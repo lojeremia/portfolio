@@ -11,6 +11,33 @@ strong {
   color: var(--white);
 }
 
+/* WORK PAGE */
+.work-title {
+  font-weight: 700;
+  color: var(--white);
+  font-size: 48px;
+  margin-bottom: 40px;
+  font-family: "Merriweather";
+  line-height: 46px;
+  margin-top: 60px;
+}
+
+.work-sub {
+  font-size: 28px;
+  margin-top: 10px;
+  margin-bottom: 40px;
+  line-height: 40px;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  box-shadow: 10px 10px 5px rgb(4, 4, 4);
+  margin-bottom: 80px;
+}
+
+/* WORK SUBPAGES */
 .main-image {
   margin-top: 60px;
   width: 100%;
